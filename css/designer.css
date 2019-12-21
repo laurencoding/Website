@@ -1,0 +1,177 @@
+<style>
+	* {  /*Global style for the page*/
+	    margin: 0;   /*Remove margin and padding*/ 
+        padding: 0;
+	}
+  
+    body {
+        font-family:'Lucida Sans';
+    }
+
+    h1 {
+        display: fixed;
+        float: left;
+        color: rgb(59, 59, 59);
+        background-color:rgb(255, 217, 223);
+        padding: 5px;
+        margin: 0;
+        width: 100%
+    }
+
+    h2 {
+        color: darkgray;
+        text-align: center;
+    }
+    
+    .cart {
+        position: relative;
+        float: right;
+        background-color:rgb(255, 217, 223);
+        padding: 5px;
+        margin-left: 5px; 
+        margin-right: -10px;
+        border: outset lightgray 5px;   
+    }
+
+    .banner {
+        display: block;
+        width: 100%;
+        margin-block-start: 25px;
+        position: relative;
+        text-align: center;
+    }
+
+    .row,.row2 {
+        margin-block-start: 25px;
+        width: 100%;
+    }
+
+    .row:after,.row2:after {
+        content: "";
+        display: table;
+        clear: both;
+    }  
+
+    .column {
+        float: left;
+        width: 20%;
+        margin-block-end: 25px;
+        text-align: center;
+    }
+
+    .column2 {
+        float: left;
+        width: 50%;
+        margin-block-end: 25px;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        display: block;
+        background-color: rgb(255, 217, 223); 
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    nav ul {  /*style for entire nav*/
+        display: inline-block;
+        width: 100%;
+        background-color: white;
+        padding: 0 3px;
+    
+	}
+	
+	nav ul li {  /*style for "li"*/
+        position: relative;
+        list-style: none;   /*removes bullets*/ 
+        display: inline-block; /*Horizontal alignment*/
+        line-height: 30px; 
+	}
+
+	nav ul li a {  /*style for nav links*/
+        display: block; 
+        text-decoration: none;   
+		color: darkgray; 
+        padding: 0 10px; 
+	}
+	
+    nav ul li a:hover {  /*style for nav links hover*/
+		color: gray;
+        background-color: rgb(255, 217, 223); 
+        height: 30px;
+    }
+
+    nav ul li ul {    /*style for dropdown list*/
+        position: absolute;
+        display: none;
+        background-color: white;
+        border-radius: 0px 0px 8px 8px;
+        border: 2px solid rgba(255, 217, 223);
+    }
+
+    nav ul li:hover ul {    /*style for dropdown hover*/
+        position: absolute;
+        display: block;
+        background-color: white;
+        padding: 0;
+        border-radius: 0px 0px 8px 8px;
+        border: 2px solid rgba(255, 217, 223);
+        width: 150px;
+    }
+
+    nav ul li ul li {    /*style for dropdown links*/
+        width: 150px;
+    }
+
+    nav ul li ul li a:hover {   /*style for dropdown links hover*/
+        background-color: rgba(255, 217, 223);
+        height: 30px;
+    }
+
+    .title {
+        display: block;
+        position: relative;
+        float: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        background-color: rgba(255, 217, 223);
+        border: outset lightgray 5px;
+        width: 25%;
+        color: rgb(59, 59, 59);
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    .signIn {
+        display: block;
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;      
+        padding: 5%;
+    }
+    
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(59, 59, 59);
+
+
+      }
+
+</style>
